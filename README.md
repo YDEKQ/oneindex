@@ -49,6 +49,13 @@ Onedrive Directory Index
 ## 安装：
 <img width="658" alt="image" src="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif">  
 
+## 伪静态
+```
+location / {                                     
+  try_files $uri $uri/ /index.php?$args;         
+}
+```
+
 
 ## docker 安装运行：
 
